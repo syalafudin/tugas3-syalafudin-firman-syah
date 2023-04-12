@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="svg" href="assets/covid.svg">
+    <title>COVID-19 TRACKER</title>
+</head>
+
+<body>
+    <div class="card row" style="border-radius: 30px;">
+        <h1>COVID-19 TRACKER</h1>
+        <div class="input-wrapper" style="text-align: center;">
+            <!-- <label for="country"></label> -->
+            <input type="text" id="country" name="country" placeholder="Country Input" style="color: black; text-align: center; box-shadow: inset 3px 3px 7px 4px rgb(192 192 199)"></input>
+            <button onclick="search()" style="background-color: rgb(3, 3, 65); color: white; box-shadow: 0px 4px 9px 4px rgb(6 3 52);">Get Data</button>
+        </div>
+
+        <div class="column">
+            <div class="card1">
+                <img src="assets/sick.svg" alt="sick" width="100">
+                <p>Active Cases</p>
+                <p id="active"></p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card2">
+                <img src="assets/syringe.svg" alt="syringe" width="100">
+                <p>New Cases</p>
+                <p id="new"></p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card3">
+                <img src="assets/sanitizer.svg" alt="sanitizer" width="100">
+                <p>Recovered Cases</p>
+                <p id="recovered"></p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card4">
+                <img src="assets/covid.svg" alt="covid" width="100">
+                <p>Total Cases</p>
+                <p id="total"></p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card5">
+                <img src="assets/dead.svg" alt="dead" width="100">
+                <p>Total Deaths</p>
+                <p id="deaths"></p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card6">
+                <img src="assets/vaccines.svg" alt="vaccines" width="100">
+                <p>Total Test</p>
+                <p id="tests"></p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
